@@ -2,4 +2,4 @@
 
 Developed in VHDL
 
-![alt text](https://github.com/ossianadrian/pmod-oled/master/img.png
+![Alt text](img.png?raw=true "Title")
