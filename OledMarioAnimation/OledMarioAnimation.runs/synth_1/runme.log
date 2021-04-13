@@ -1,0 +1,660 @@
+
+*** Running vivado
+    with args -log PmodOLED.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source PmodOLED.tcl
+
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source PmodOLED.tcl -notrace
+Command: synth_design -top PmodOLED -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 2068 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 419.504 ; gain = 101.504
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'PmodOLED' [C:/Storage/facultate/SSC/Project Pmod OLED/Nexys4OLEDdemo/Nexys4OLEDdemo.srcs/sources_1/imports/PmodOLED_Source/PmodOLEDCtrl.vhd:32]
+INFO: [Synth 8-3491] module 'OledInit' declared at 'C:/Storage/facultate/SSC/Project Pmod OLED/Nexys4OLEDdemo/Nexys4OLEDdemo.srcs/sources_1/imports/PmodOLED_Source/OledInit.vhd:19' bound to instance 'Init' of component 'OledInit' [C:/Storage/facultate/SSC/Project Pmod OLED/Nexys4OLEDdemo/Nexys4OLEDdemo.srcs/sources_1/imports/PmodOLED_Source/PmodOLEDCtrl.vhd:83]
+INFO: [Synth 8-638] synthesizing module 'OledInit' [C:/Storage/facultate/SSC/Project Pmod OLED/Nexys4OLEDdemo/Nexys4OLEDdemo.srcs/sources_1/imports/PmodOLED_Source/OledInit.vhd:33]
+INFO: [Synth 8-3491] module 'SpiMarioLib' declared at 'C:/Storage/facultate/SSC/Project Pmod OLED/Nexys4OLEDdemo/Nexys4OLEDdemo.srcs/sources_1/imports/PmodOLED_Source/SpiCtrl.vhd:21' bound to instance 'SPI_COMP' of component 'SpiMarioLib' [C:/Storage/facultate/SSC/Project Pmod OLED/Nexys4OLEDdemo/Nexys4OLEDdemo.srcs/sources_1/imports/PmodOLED_Source/OledInit.vhd:105]
+INFO: [Synth 8-638] synthesizing module 'SpiMarioLib' [C:/Storage/facultate/SSC/Project Pmod OLED/Nexys4OLEDdemo/Nexys4OLEDdemo.srcs/sources_1/imports/PmodOLED_Source/SpiCtrl.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'SpiMarioLib' (1#1) [C:/Storage/facultate/SSC/Project Pmod OLED/Nexys4OLEDdemo/Nexys4OLEDdemo.srcs/sources_1/imports/PmodOLED_Source/SpiCtrl.vhd:32]
+INFO: [Synth 8-3491] module 'DelayMilliseconds' declared at 'C:/Storage/facultate/SSC/Project Pmod OLED/Nexys4OLEDdemo/Nexys4OLEDdemo.srcs/sources_1/imports/PmodOLED_Source/Delay.vhd:19' bound to instance 'DELAY_COMP' of component 'DelayMilliseconds' [C:/Storage/facultate/SSC/Project Pmod OLED/Nexys4OLEDdemo/Nexys4OLEDdemo.srcs/sources_1/imports/PmodOLED_Source/OledInit.vhd:116]
+INFO: [Synth 8-638] synthesizing module 'DelayMilliseconds' [C:/Storage/facultate/SSC/Project Pmod OLED/Nexys4OLEDdemo/Nexys4OLEDdemo.srcs/sources_1/imports/PmodOLED_Source/Delay.vhd:27]
+INFO: [Synth 8-256] done synthesizing module 'DelayMilliseconds' (2#1) [C:/Storage/facultate/SSC/Project Pmod OLED/Nexys4OLEDdemo/Nexys4OLEDdemo.srcs/sources_1/imports/PmodOLED_Source/Delay.vhd:27]
+INFO: [Synth 8-256] done synthesizing module 'OledInit' (3#1) [C:/Storage/facultate/SSC/Project Pmod OLED/Nexys4OLEDdemo/Nexys4OLEDdemo.srcs/sources_1/imports/PmodOLED_Source/OledInit.vhd:33]
+INFO: [Synth 8-3491] module 'OledMarioAnimation' declared at 'C:/Storage/facultate/SSC/Project Pmod OLED/Nexys4OLEDdemo/Nexys4OLEDdemo.srcs/sources_1/imports/PmodOLED_Source/OledExample.vhd:20' bound to instance 'Mario' of component 'OledMarioAnimation' [C:/Storage/facultate/SSC/Project Pmod OLED/Nexys4OLEDdemo/Nexys4OLEDdemo.srcs/sources_1/imports/PmodOLED_Source/PmodOLEDCtrl.vhd:84]
+INFO: [Synth 8-638] synthesizing module 'OledMarioAnimation' [C:/Storage/facultate/SSC/Project Pmod OLED/Nexys4OLEDdemo/Nexys4OLEDdemo.srcs/sources_1/imports/PmodOLED_Source/OledExample.vhd:33]
+INFO: [Synth 8-3491] module 'SpiMarioLib' declared at 'C:/Storage/facultate/SSC/Project Pmod OLED/Nexys4OLEDdemo/Nexys4OLEDdemo.srcs/sources_1/imports/PmodOLED_Source/SpiCtrl.vhd:21' bound to instance 'SPI_COMP' of component 'SpiMarioLib' [C:/Storage/facultate/SSC/Project Pmod OLED/Nexys4OLEDdemo/Nexys4OLEDdemo.srcs/sources_1/imports/PmodOLED_Source/OledExample.vhd:245]
+INFO: [Synth 8-3491] module 'DelayMilliseconds' declared at 'C:/Storage/facultate/SSC/Project Pmod OLED/Nexys4OLEDdemo/Nexys4OLEDdemo.srcs/sources_1/imports/PmodOLED_Source/Delay.vhd:19' bound to instance 'DELAY_COMP' of component 'DelayMilliseconds' [C:/Storage/facultate/SSC/Project Pmod OLED/Nexys4OLEDdemo/Nexys4OLEDdemo.srcs/sources_1/imports/PmodOLED_Source/OledExample.vhd:256]
+INFO: [Synth 8-3491] module 'charLib' declared at 'C:/Storage/facultate/SSC/Project Pmod OLED/Nexys4OLEDdemo/Nexys4OLEDdemo.runs/synth_1/.Xil/Vivado-6372-AsusZenBookOssi/realtime/charLib_stub.vhdl:5' bound to instance 'CHAR_LIB_COMP' of component 'charLib' [C:/Storage/facultate/SSC/Project Pmod OLED/Nexys4OLEDdemo/Nexys4OLEDdemo.srcs/sources_1/imports/PmodOLED_Source/OledExample.vhd:264]
+INFO: [Synth 8-638] synthesizing module 'charLib' [C:/Storage/facultate/SSC/Project Pmod OLED/Nexys4OLEDdemo/Nexys4OLEDdemo.runs/synth_1/.Xil/Vivado-6372-AsusZenBookOssi/realtime/charLib_stub.vhdl:14]
+INFO: [Synth 8-3491] module 'MarioLib' declared at 'C:/Storage/facultate/SSC/Project Pmod OLED/Nexys4OLEDdemo/Nexys4OLEDdemo.srcs/sources_1/new/MarioLib.vhd:34' bound to instance 'Drawing' of component 'MarioLib' [C:/Storage/facultate/SSC/Project Pmod OLED/Nexys4OLEDdemo/Nexys4OLEDdemo.srcs/sources_1/imports/PmodOLED_Source/OledExample.vhd:272]
+INFO: [Synth 8-638] synthesizing module 'MarioLib' [C:/Storage/facultate/SSC/Project Pmod OLED/Nexys4OLEDdemo/Nexys4OLEDdemo.srcs/sources_1/new/MarioLib.vhd:49]
+INFO: [Synth 8-226] default block is never used [C:/Storage/facultate/SSC/Project Pmod OLED/Nexys4OLEDdemo/Nexys4OLEDdemo.srcs/sources_1/new/MarioLib.vhd:58]
+INFO: [Synth 8-256] done synthesizing module 'MarioLib' (4#1) [C:/Storage/facultate/SSC/Project Pmod OLED/Nexys4OLEDdemo/Nexys4OLEDdemo.srcs/sources_1/new/MarioLib.vhd:49]
+INFO: [Synth 8-256] done synthesizing module 'OledMarioAnimation' (5#1) [C:/Storage/facultate/SSC/Project Pmod OLED/Nexys4OLEDdemo/Nexys4OLEDdemo.srcs/sources_1/imports/PmodOLED_Source/OledExample.vhd:33]
+INFO: [Synth 8-256] done synthesizing module 'PmodOLED' (6#1) [C:/Storage/facultate/SSC/Project Pmod OLED/Nexys4OLEDdemo/Nexys4OLEDdemo.srcs/sources_1/imports/PmodOLED_Source/PmodOLEDCtrl.vhd:32]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 503.273 ; gain = 185.273
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 503.273 ; gain = 185.273
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 503.273 ; gain = 185.273
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Storage/facultate/SSC/Project Pmod OLED/Nexys4OLEDdemo/Nexys4OLEDdemo.srcs/sources_1/ip/charLib/charLib/charLib_in_context.xdc] for cell 'Mario/CHAR_LIB_COMP'
+Finished Parsing XDC File [c:/Storage/facultate/SSC/Project Pmod OLED/Nexys4OLEDdemo/Nexys4OLEDdemo.srcs/sources_1/ip/charLib/charLib/charLib_in_context.xdc] for cell 'Mario/CHAR_LIB_COMP'
+Parsing XDC File [C:/Storage/facultate/SSC/Project Pmod OLED/Nexys4OLEDdemo/Nexys4OLEDdemo.srcs/constrs_1/imports/XDC/Nexys4_Master.xdc]
+Finished Parsing XDC File [C:/Storage/facultate/SSC/Project Pmod OLED/Nexys4OLEDdemo/Nexys4OLEDdemo.srcs/constrs_1/imports/XDC/Nexys4_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Storage/facultate/SSC/Project Pmod OLED/Nexys4OLEDdemo/Nexys4OLEDdemo.srcs/constrs_1/imports/XDC/Nexys4_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/PmodOLED_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/PmodOLED_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 852.566 ; gain = 0.000
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 852.566 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 852.566 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 852.566 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'Mario/CHAR_LIB_COMP' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 853.695 ; gain = 535.695
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 853.695 ; gain = 535.695
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for Mario/CHAR_LIB_COMP. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 853.695 ; gain = 535.695
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'curr_state_reg' in module 'SpiMarioLib'
+INFO: [Synth 8-5544] ROM "SPI_FIN" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "counter" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "shift_counter" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'DelayMilliseconds'
+INFO: [Synth 8-5544] ROM "ms_counter" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "temp_delay_ms" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "douta_temp" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "douta_temp" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "douta_temp" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "douta_temp" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "douta_temp" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "douta_temp" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "douta_temp" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "douta_temp" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-4471] merging register 'current_screen_reg[0,4][7:0]' into 'current_screen_reg[0,3][7:0]' [C:/Storage/facultate/SSC/Project Pmod OLED/Nexys4OLEDdemo/Nexys4OLEDdemo.srcs/sources_1/imports/PmodOLED_Source/OledExample.vhd:304]
+INFO: [Synth 8-4471] merging register 'current_screen_reg[0,5][7:0]' into 'current_screen_reg[0,3][7:0]' [C:/Storage/facultate/SSC/Project Pmod OLED/Nexys4OLEDdemo/Nexys4OLEDdemo.srcs/sources_1/imports/PmodOLED_Source/OledExample.vhd:304]
+INFO: [Synth 8-4471] merging register 'current_screen_reg[0,6][7:0]' into 'current_screen_reg[0,3][7:0]' [C:/Storage/facultate/SSC/Project Pmod OLED/Nexys4OLEDdemo/Nexys4OLEDdemo.srcs/sources_1/imports/PmodOLED_Source/OledExample.vhd:304]
+INFO: [Synth 8-4471] merging register 'current_screen_reg[0,7][7:0]' into 'current_screen_reg[0,3][7:0]' [C:/Storage/facultate/SSC/Project Pmod OLED/Nexys4OLEDdemo/Nexys4OLEDdemo.srcs/sources_1/imports/PmodOLED_Source/OledExample.vhd:304]
+INFO: [Synth 8-4471] merging register 'current_screen_reg[0,8][7:0]' into 'current_screen_reg[0,3][7:0]' [C:/Storage/facultate/SSC/Project Pmod OLED/Nexys4OLEDdemo/Nexys4OLEDdemo.srcs/sources_1/imports/PmodOLED_Source/OledExample.vhd:304]
+INFO: [Synth 8-4471] merging register 'current_screen_reg[0,9][7:0]' into 'current_screen_reg[0,3][7:0]' [C:/Storage/facultate/SSC/Project Pmod OLED/Nexys4OLEDdemo/Nexys4OLEDdemo.srcs/sources_1/imports/PmodOLED_Source/OledExample.vhd:304]
+INFO: [Synth 8-4471] merging register 'current_screen_reg[0,10][7:0]' into 'current_screen_reg[0,3][7:0]' [C:/Storage/facultate/SSC/Project Pmod OLED/Nexys4OLEDdemo/Nexys4OLEDdemo.srcs/sources_1/imports/PmodOLED_Source/OledExample.vhd:304]
+INFO: [Synth 8-4471] merging register 'current_screen_reg[0,11][7:0]' into 'current_screen_reg[0,3][7:0]' [C:/Storage/facultate/SSC/Project Pmod OLED/Nexys4OLEDdemo/Nexys4OLEDdemo.srcs/sources_1/imports/PmodOLED_Source/OledExample.vhd:304]
+INFO: [Synth 8-4471] merging register 'current_screen_reg[0,12][7:0]' into 'current_screen_reg[0,3][7:0]' [C:/Storage/facultate/SSC/Project Pmod OLED/Nexys4OLEDdemo/Nexys4OLEDdemo.srcs/sources_1/imports/PmodOLED_Source/OledExample.vhd:304]
+INFO: [Synth 8-4471] merging register 'current_screen_reg[0,13][7:0]' into 'current_screen_reg[0,3][7:0]' [C:/Storage/facultate/SSC/Project Pmod OLED/Nexys4OLEDdemo/Nexys4OLEDdemo.srcs/sources_1/imports/PmodOLED_Source/OledExample.vhd:304]
+INFO: [Synth 8-4471] merging register 'current_screen_reg[0,14][7:0]' into 'current_screen_reg[0,3][7:0]' [C:/Storage/facultate/SSC/Project Pmod OLED/Nexys4OLEDdemo/Nexys4OLEDdemo.srcs/sources_1/imports/PmodOLED_Source/OledExample.vhd:304]
+INFO: [Synth 8-4471] merging register 'current_screen_reg[0,15][7:0]' into 'current_screen_reg[0,3][7:0]' [C:/Storage/facultate/SSC/Project Pmod OLED/Nexys4OLEDdemo/Nexys4OLEDdemo.srcs/sources_1/imports/PmodOLED_Source/OledExample.vhd:304]
+INFO: [Synth 8-4471] merging register 'current_screen_reg[1,3][7:0]' into 'current_screen_reg[0,3][7:0]' [C:/Storage/facultate/SSC/Project Pmod OLED/Nexys4OLEDdemo/Nexys4OLEDdemo.srcs/sources_1/imports/PmodOLED_Source/OledExample.vhd:304]
+INFO: [Synth 8-4471] merging register 'current_screen_reg[1,4][7:0]' into 'current_screen_reg[0,3][7:0]' [C:/Storage/facultate/SSC/Project Pmod OLED/Nexys4OLEDdemo/Nexys4OLEDdemo.srcs/sources_1/imports/PmodOLED_Source/OledExample.vhd:304]
+INFO: [Synth 8-4471] merging register 'current_screen_reg[1,7][7:0]' into 'current_screen_reg[0,3][7:0]' [C:/Storage/facultate/SSC/Project Pmod OLED/Nexys4OLEDdemo/Nexys4OLEDdemo.srcs/sources_1/imports/PmodOLED_Source/OledExample.vhd:304]
+INFO: [Synth 8-4471] merging register 'current_screen_reg[1,8][7:0]' into 'current_screen_reg[0,3][7:0]' [C:/Storage/facultate/SSC/Project Pmod OLED/Nexys4OLEDdemo/Nexys4OLEDdemo.srcs/sources_1/imports/PmodOLED_Source/OledExample.vhd:304]
+INFO: [Synth 8-4471] merging register 'current_screen_reg[1,9][7:0]' into 'current_screen_reg[0,3][7:0]' [C:/Storage/facultate/SSC/Project Pmod OLED/Nexys4OLEDdemo/Nexys4OLEDdemo.srcs/sources_1/imports/PmodOLED_Source/OledExample.vhd:304]
+INFO: [Synth 8-4471] merging register 'current_screen_reg[1,10][7:0]' into 'current_screen_reg[0,3][7:0]' [C:/Storage/facultate/SSC/Project Pmod OLED/Nexys4OLEDdemo/Nexys4OLEDdemo.srcs/sources_1/imports/PmodOLED_Source/OledExample.vhd:304]
+INFO: [Synth 8-4471] merging register 'current_screen_reg[1,11][7:0]' into 'current_screen_reg[0,3][7:0]' [C:/Storage/facultate/SSC/Project Pmod OLED/Nexys4OLEDdemo/Nexys4OLEDdemo.srcs/sources_1/imports/PmodOLED_Source/OledExample.vhd:304]
+INFO: [Synth 8-4471] merging register 'current_screen_reg[1,12][7:0]' into 'current_screen_reg[0,3][7:0]' [C:/Storage/facultate/SSC/Project Pmod OLED/Nexys4OLEDdemo/Nexys4OLEDdemo.srcs/sources_1/imports/PmodOLED_Source/OledExample.vhd:304]
+INFO: [Synth 8-4471] merging register 'current_screen_reg[1,13][7:0]' into 'current_screen_reg[0,3][7:0]' [C:/Storage/facultate/SSC/Project Pmod OLED/Nexys4OLEDdemo/Nexys4OLEDdemo.srcs/sources_1/imports/PmodOLED_Source/OledExample.vhd:304]
+INFO: [Synth 8-4471] merging register 'current_screen_reg[1,14][7:0]' into 'current_screen_reg[0,3][7:0]' [C:/Storage/facultate/SSC/Project Pmod OLED/Nexys4OLEDdemo/Nexys4OLEDdemo.srcs/sources_1/imports/PmodOLED_Source/OledExample.vhd:304]
+INFO: [Synth 8-4471] merging register 'current_screen_reg[1,15][7:0]' into 'current_screen_reg[0,3][7:0]' [C:/Storage/facultate/SSC/Project Pmod OLED/Nexys4OLEDdemo/Nexys4OLEDdemo.srcs/sources_1/imports/PmodOLED_Source/OledExample.vhd:304]
+INFO: [Synth 8-4471] merging register 'current_screen_reg[2,15][7:0]' into 'current_screen_reg[0,3][7:0]' [C:/Storage/facultate/SSC/Project Pmod OLED/Nexys4OLEDdemo/Nexys4OLEDdemo.srcs/sources_1/imports/PmodOLED_Source/OledExample.vhd:304]
+INFO: [Synth 8-4471] merging register 'current_screen_reg[3,15][7:0]' into 'current_screen_reg[0,3][7:0]' [C:/Storage/facultate/SSC/Project Pmod OLED/Nexys4OLEDdemo/Nexys4OLEDdemo.srcs/sources_1/imports/PmodOLED_Source/OledExample.vhd:304]
+INFO: [Synth 8-5546] ROM "FIN" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "after_page_state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "after_char_state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+WARNING: [Synth 8-6040] Register current_state_reg_rep driving address of a ROM cannot be packed in BRAM/URAM because of presence of initial value.
+WARNING: [Synth 8-6040] Register current_state_reg_rep driving address of a ROM cannot be packed in BRAM/URAM because of presence of initial value.
+WARNING: [Synth 8-6040] Register current_state_reg_rep driving address of a ROM cannot be packed in BRAM/URAM because of presence of initial value.
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'PmodOLED'
+INFO: [Synth 8-5544] ROM "init_en" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "mario_en" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                              000 |                              000
+                    send |                              001 |                              001
+                 holdcs1 |                              010 |                              010
+                 holdcs2 |                              011 |                              011
+                 holdcs3 |                              100 |                              100
+                 holdcs4 |                              101 |                              101
+                    done |                              110 |                              110
+                  iSTATE |                              111 |                              111
+*
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'curr_state_reg' using encoding 'sequential' in module 'SpiMarioLib'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                             0001 |                               00
+                    hold |                             0010 |                               01
+                    done |                             0100 |                               10
+                  iSTATE |                             1000 |                               11
+*
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'DelayMilliseconds'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                              001 |                               00
+          oledinitialize |                              010 |                               01
+               oledmario |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'PmodOLED'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 853.695 ; gain = 535.695
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 3     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               12 Bit    Registers := 1     
+	               11 Bit    Registers := 1     
+	                8 Bit    Registers := 44    
+	                7 Bit    Registers := 8     
+	                5 Bit    Registers := 4     
+	                4 Bit    Registers := 3     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 14    
++---ROMs : 
+	                              ROMs := 3     
++---Muxes : 
+	  73 Input     12 Bit        Muxes := 1     
+	  73 Input     11 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	  28 Input      8 Bit        Muxes := 1     
+	  24 Input      8 Bit        Muxes := 8     
+	  73 Input      8 Bit        Muxes := 21    
+	   4 Input      8 Bit        Muxes := 26    
+	   3 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 5     
+	  73 Input      7 Bit        Muxes := 2     
+	  15 Input      7 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	  28 Input      5 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 3     
+	  73 Input      4 Bit        Muxes := 1     
+	   8 Input      3 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 2     
+	   3 Input      3 Bit        Muxes := 1     
+	  73 Input      2 Bit        Muxes := 12    
+	   3 Input      1 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 33    
+	   8 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 2     
+	  28 Input      1 Bit        Muxes := 10    
+	  73 Input      1 Bit        Muxes := 7     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module PmodOLED 
+Detailed RTL Component Info : 
++---Muxes : 
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+	   3 Input      1 Bit        Muxes := 1     
+Module SpiMarioLib 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	   8 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 10    
+	   8 Input      1 Bit        Muxes := 1     
+Module DelayMilliseconds 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module OledInit 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	  28 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+	  28 Input      5 Bit        Muxes := 1     
+	  28 Input      1 Bit        Muxes := 10    
+Module MarioLib 
+Detailed RTL Component Info : 
++---Muxes : 
+	  24 Input      8 Bit        Muxes := 8     
+Module OledMarioAnimation 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               12 Bit    Registers := 1     
+	               11 Bit    Registers := 1     
+	                8 Bit    Registers := 41    
+	                7 Bit    Registers := 8     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---ROMs : 
+	                              ROMs := 3     
++---Muxes : 
+	  73 Input     12 Bit        Muxes := 1     
+	  73 Input     11 Bit        Muxes := 1     
+	  73 Input      8 Bit        Muxes := 21    
+	   4 Input      8 Bit        Muxes := 26    
+	   3 Input      8 Bit        Muxes := 1     
+	  73 Input      7 Bit        Muxes := 2     
+	   2 Input      7 Bit        Muxes := 4     
+	  15 Input      7 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	  73 Input      4 Bit        Muxes := 1     
+	  73 Input      2 Bit        Muxes := 12    
+	  73 Input      1 Bit        Muxes := 7     
+	   2 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "Init/temp_delay_ms" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "Mario/after_page_state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Mario/after_char_state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5587] ROM size for "Mario/Drawing/douta_temp" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "Mario/Drawing/douta_temp" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "Mario/Drawing/douta_temp" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "Mario/Drawing/douta_temp" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "Mario/Drawing/douta_temp" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "Mario/Drawing/douta_temp" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "Mario/Drawing/douta_temp" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "Mario/Drawing/douta_temp" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "Mario/FIN" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6040] Register Mario/current_state_reg_rep driving address of a ROM cannot be packed in BRAM/URAM because of presence of initial value.
+WARNING: [Synth 8-6040] Register Mario/current_state_reg_rep driving address of a ROM cannot be packed in BRAM/URAM because of presence of initial value.
+WARNING: [Synth 8-6040] Register Mario/current_state_reg_rep driving address of a ROM cannot be packed in BRAM/URAM because of presence of initial value.
+INFO: [Synth 8-3886] merging instance 'Mario/current_screen_reg[2,14][1]' (FDE) to 'Mario/current_screen_reg[2,14][0]'
+INFO: [Synth 8-3886] merging instance 'Mario/current_screen_reg[3,14][1]' (FDE) to 'Mario/current_screen_reg[3,14][7]'
+INFO: [Synth 8-3886] merging instance 'Mario/current_screen_reg[2,13][1]' (FDE) to 'Mario/current_screen_reg[2,13][4]'
+INFO: [Synth 8-3886] merging instance 'Mario/current_screen_reg[3,13][1]' (FDE) to 'Mario/current_screen_reg[3,13][7]'
+INFO: [Synth 8-3886] merging instance 'Mario/current_screen_reg[2,12][1]' (FDE) to 'Mario/current_screen_reg[2,12][4]'
+INFO: [Synth 8-3886] merging instance 'Mario/current_screen_reg[3,12][1]' (FDE) to 'Mario/current_screen_reg[3,12][7]'
+INFO: [Synth 8-3886] merging instance 'Mario/current_screen_reg[2,11][1]' (FDE) to 'Mario/current_screen_reg[2,11][4]'
+INFO: [Synth 8-3886] merging instance 'Mario/current_screen_reg[3,11][1]' (FDE) to 'Mario/current_screen_reg[3,11][7]'
+INFO: [Synth 8-3886] merging instance 'Mario/current_screen_reg[2,10][1]' (FDE) to 'Mario/current_screen_reg[2,10][4]'
+INFO: [Synth 8-3886] merging instance 'Mario/current_screen_reg[3,10][1]' (FDE) to 'Mario/current_screen_reg[3,10][7]'
+INFO: [Synth 8-3886] merging instance 'Mario/current_screen_reg[2,9][1]' (FDE) to 'Mario/current_screen_reg[2,9][4]'
+INFO: [Synth 8-3886] merging instance 'Mario/current_screen_reg[3,9][1]' (FDE) to 'Mario/current_screen_reg[3,9][7]'
+INFO: [Synth 8-3886] merging instance 'Mario/current_screen_reg[2,8][1]' (FDE) to 'Mario/current_screen_reg[2,8][4]'
+INFO: [Synth 8-3886] merging instance 'Mario/current_screen_reg[3,8][1]' (FDE) to 'Mario/current_screen_reg[3,8][7]'
+INFO: [Synth 8-3886] merging instance 'Mario/current_screen_reg[2,7][1]' (FDE) to 'Mario/current_screen_reg[2,7][4]'
+INFO: [Synth 8-3886] merging instance 'Mario/current_screen_reg[3,7][1]' (FDE) to 'Mario/current_screen_reg[3,7][7]'
+INFO: [Synth 8-3886] merging instance 'Mario/current_screen_reg[1,6][1]' (FDE) to 'Mario/current_screen_reg[1,6][4]'
+INFO: [Synth 8-3886] merging instance 'Mario/current_screen_reg[3,6][1]' (FDE) to 'Mario/current_screen_reg[3,6][3]'
+INFO: [Synth 8-3886] merging instance 'Mario/current_screen_reg[1,5][1]' (FDE) to 'Mario/current_screen_reg[1,5][7]'
+INFO: [Synth 8-3886] merging instance 'Mario/current_screen_reg[3,5][1]' (FDE) to 'Mario/current_screen_reg[3,5][7]'
+INFO: [Synth 8-3886] merging instance 'Mario/current_screen_reg[2,4][1]' (FDE) to 'Mario/current_screen_reg[2,4][4]'
+INFO: [Synth 8-3886] merging instance 'Mario/current_screen_reg[3,4][1]' (FDE) to 'Mario/current_screen_reg[3,4][7]'
+INFO: [Synth 8-3886] merging instance 'Mario/current_screen_reg[0,3][1]' (FDE) to 'Mario/current_screen_reg[0,3][0]'
+INFO: [Synth 8-3886] merging instance 'Mario/current_screen_reg[2,3][1]' (FDE) to 'Mario/current_screen_reg[2,3][4]'
+INFO: [Synth 8-3886] merging instance 'Mario/current_screen_reg[3,3][1]' (FDE) to 'Mario/current_screen_reg[3,3][3]'
+INFO: [Synth 8-3886] merging instance 'Mario/current_screen_reg[1,2][1]' (FDE) to 'Mario/current_screen_reg[1,2][3]'
+INFO: [Synth 8-3886] merging instance 'Mario/current_screen_reg[2,2][1]' (FDE) to 'Mario/current_screen_reg[2,2][4]'
+INFO: [Synth 8-3886] merging instance 'Mario/current_screen_reg[3,2][1]' (FDE) to 'Mario/current_screen_reg[3,2][3]'
+INFO: [Synth 8-3886] merging instance 'Mario/current_screen_reg[0,1][1]' (FDE) to 'Mario/current_screen_reg[0,1][7]'
+INFO: [Synth 8-3886] merging instance 'Mario/current_screen_reg[1,1][1]' (FDE) to 'Mario/current_screen_reg[1,1][4]'
+INFO: [Synth 8-3886] merging instance 'Mario/current_screen_reg[2,1][1]' (FDE) to 'Mario/current_screen_reg[2,1][2]'
+INFO: [Synth 8-3886] merging instance 'Mario/current_screen_reg[0,0][1]' (FDE) to 'Mario/current_screen_reg[0,0][0]'
+INFO: [Synth 8-3886] merging instance 'Mario/current_screen_reg[2,0][1]' (FDE) to 'Mario/current_screen_reg[2,0][2]'
+INFO: [Synth 8-3886] merging instance 'Mario/current_screen_reg[2,14][0]' (FDE) to 'Mario/current_screen_reg[2,14][4]'
+INFO: [Synth 8-3886] merging instance 'Mario/current_screen_reg[3,14][0]' (FDE) to 'Mario/current_screen_reg[3,14][4]'
+INFO: [Synth 8-3886] merging instance 'Mario/current_screen_reg[1,6][0]' (FDE) to 'Mario/current_screen_reg[1,6][2]'
+INFO: [Synth 8-3886] merging instance 'Mario/current_screen_reg[1,5][0]' (FDE) to 'Mario/current_screen_reg[1,5][7]'
+INFO: [Synth 8-3886] merging instance 'Mario/current_screen_reg[0,3][0]' (FDE) to 'Mario/current_screen_reg[0,3][2]'
+INFO: [Synth 8-3886] merging instance 'Mario/current_screen_reg[0,2][0]' (FDE) to 'Mario/current_screen_reg[0,2][7]'
+INFO: [Synth 8-3886] merging instance 'Mario/current_screen_reg[1,2][0]' (FDE) to 'Mario/current_screen_reg[1,2][2]'
+INFO: [Synth 8-3886] merging instance 'Mario/current_screen_reg[1,1][0]' (FDE) to 'Mario/current_screen_reg[1,1][3]'
+INFO: [Synth 8-3886] merging instance 'Mario/current_screen_reg[2,1][0]' (FDE) to 'Mario/current_screen_reg[2,1][2]'
+INFO: [Synth 8-3886] merging instance 'Mario/current_screen_reg[0,0][0]' (FDE) to 'Mario/current_screen_reg[0,0][2]'
+INFO: [Synth 8-3886] merging instance 'Mario/current_screen_reg[2,0][0]' (FDE) to 'Mario/current_screen_reg[1,1][4]'
+INFO: [Synth 8-3886] merging instance 'Mario/current_screen_reg[2,14][2]' (FDE) to 'Mario/current_screen_reg[2,14][3]'
+INFO: [Synth 8-3886] merging instance 'Mario/current_screen_reg[3,14][2]' (FDE) to 'Mario/current_screen_reg[3,14][4]'
+INFO: [Synth 8-3886] merging instance 'Mario/current_screen_reg[2,13][2]' (FDE) to 'Mario/current_screen_reg[2,13][3]'
+INFO: [Synth 8-3886] merging instance 'Mario/current_screen_reg[3,13][2]' (FDE) to 'Mario/current_screen_reg[3,13][4]'
+INFO: [Synth 8-3886] merging instance 'Mario/current_screen_reg[2,12][2]' (FDE) to 'Mario/current_screen_reg[2,12][3]'
+INFO: [Synth 8-3886] merging instance 'Mario/current_screen_reg[3,12][2]' (FDE) to 'Mario/current_screen_reg[3,12][4]'
+INFO: [Synth 8-3886] merging instance 'Mario/current_screen_reg[2,11][2]' (FDE) to 'Mario/current_screen_reg[2,11][3]'
+INFO: [Synth 8-3886] merging instance 'Mario/current_screen_reg[3,11][2]' (FDE) to 'Mario/current_screen_reg[3,11][4]'
+INFO: [Synth 8-3886] merging instance 'Mario/current_screen_reg[2,10][2]' (FDE) to 'Mario/current_screen_reg[2,10][3]'
+INFO: [Synth 8-3886] merging instance 'Mario/current_screen_reg[3,10][2]' (FDE) to 'Mario/current_screen_reg[3,10][4]'
+INFO: [Synth 8-3886] merging instance 'Mario/current_screen_reg[2,9][2]' (FDE) to 'Mario/current_screen_reg[2,9][3]'
+INFO: [Synth 8-3886] merging instance 'Mario/current_screen_reg[3,9][2]' (FDE) to 'Mario/current_screen_reg[3,9][4]'
+INFO: [Synth 8-3886] merging instance 'Mario/current_screen_reg[2,8][2]' (FDE) to 'Mario/current_screen_reg[2,8][3]'
+INFO: [Synth 8-3886] merging instance 'Mario/current_screen_reg[3,8][2]' (FDE) to 'Mario/current_screen_reg[3,8][4]'
+INFO: [Synth 8-3886] merging instance 'Mario/current_screen_reg[2,7][2]' (FDE) to 'Mario/current_screen_reg[2,7][3]'
+INFO: [Synth 8-3886] merging instance 'Mario/current_screen_reg[3,7][2]' (FDE) to 'Mario/current_screen_reg[3,7][4]'
+INFO: [Synth 8-3886] merging instance 'Mario/current_screen_reg[1,6][2]' (FDE) to 'Mario/current_screen_reg[1,6][3]'
+INFO: [Synth 8-3886] merging instance 'Mario/current_screen_reg[2,6][2]' (FDE) to 'Mario/current_screen_reg[2,6][3]'
+INFO: [Synth 8-3886] merging instance 'Mario/current_screen_reg[1,5][2]' (FDE) to 'Mario/current_screen_reg[1,5][3]'
+INFO: [Synth 8-3886] merging instance 'Mario/current_screen_reg[2,5][2]' (FDE) to 'Mario/current_screen_reg[2,5][3]'
+INFO: [Synth 8-3886] merging instance 'Mario/current_screen_reg[2,4][2]' (FDE) to 'Mario/current_screen_reg[2,4][3]'
+INFO: [Synth 8-3886] merging instance 'Mario/current_screen_reg[3,4][2]' (FDE) to 'Mario/current_screen_reg[3,4][4]'
+INFO: [Synth 8-3886] merging instance 'Mario/current_screen_reg[0,3][2]' (FDE) to 'Mario/current_screen_reg[0,3][3]'
+INFO: [Synth 8-3886] merging instance 'Mario/current_screen_reg[2,3][2]' (FDE) to 'Mario/current_screen_reg[2,3][7]'
+INFO: [Synth 8-3886] merging instance 'Mario/current_screen_reg[3,3][2]' (FDE) to 'Mario/current_screen_reg[3,3][4]'
+INFO: [Synth 8-3886] merging instance 'Mario/current_screen_reg[0,2][2]' (FDE) to 'Mario/current_screen_reg[0,2][7]'
+INFO: [Synth 8-3886] merging instance 'Mario/current_screen_reg[2,2][2]' (FDE) to 'Mario/current_screen_reg[2,2][7]'
+INFO: [Synth 8-3886] merging instance 'Mario/current_screen_reg[3,2][2]' (FDE) to 'Mario/current_screen_reg[3,2][4]'
+INFO: [Synth 8-3886] merging instance 'Mario/current_screen_reg[0,1][2]' (FDE) to 'Mario/current_screen_reg[0,1][7]'
+INFO: [Synth 8-3886] merging instance 'Mario/current_screen_reg[0,0][2]' (FDE) to 'Mario/current_screen_reg[0,0][3]'
+INFO: [Synth 8-3886] merging instance 'Mario/current_screen_reg[2,14][6]' (FDE) to 'Mario/current_screen_reg[2,14][3]'
+INFO: [Synth 8-3886] merging instance 'Mario/current_screen_reg[3,14][6]' (FDE) to 'Mario/current_screen_reg[3,14][7]'
+INFO: [Synth 8-3886] merging instance 'Mario/current_screen_reg[2,13][6]' (FDE) to 'Mario/current_screen_reg[2,13][3]'
+INFO: [Synth 8-3886] merging instance 'Mario/current_screen_reg[3,13][6]' (FDE) to 'Mario/current_screen_reg[3,13][7]'
+INFO: [Synth 8-3886] merging instance 'Mario/current_screen_reg[2,12][6]' (FDE) to 'Mario/current_screen_reg[2,12][3]'
+INFO: [Synth 8-3886] merging instance 'Mario/current_screen_reg[3,12][6]' (FDE) to 'Mario/current_screen_reg[3,12][7]'
+INFO: [Synth 8-3886] merging instance 'Mario/current_screen_reg[2,11][6]' (FDE) to 'Mario/current_screen_reg[2,11][3]'
+INFO: [Synth 8-3886] merging instance 'Mario/current_screen_reg[3,11][6]' (FDE) to 'Mario/current_screen_reg[3,11][7]'
+INFO: [Synth 8-3886] merging instance 'Mario/current_screen_reg[2,10][6]' (FDE) to 'Mario/current_screen_reg[2,10][3]'
+INFO: [Synth 8-3886] merging instance 'Mario/current_screen_reg[3,10][6]' (FDE) to 'Mario/current_screen_reg[3,10][7]'
+INFO: [Synth 8-3886] merging instance 'Mario/current_screen_reg[2,9][6]' (FDE) to 'Mario/current_screen_reg[2,9][3]'
+INFO: [Synth 8-3886] merging instance 'Mario/current_screen_reg[3,9][6]' (FDE) to 'Mario/current_screen_reg[3,9][7]'
+INFO: [Synth 8-3886] merging instance 'Mario/current_screen_reg[2,8][6]' (FDE) to 'Mario/current_screen_reg[2,8][3]'
+INFO: [Synth 8-3886] merging instance 'Mario/current_screen_reg[3,8][6]' (FDE) to 'Mario/current_screen_reg[3,8][7]'
+INFO: [Synth 8-3886] merging instance 'Mario/current_screen_reg[2,7][6]' (FDE) to 'Mario/current_screen_reg[2,7][3]'
+INFO: [Synth 8-3886] merging instance 'Mario/current_screen_reg[3,7][6]' (FDE) to 'Mario/current_screen_reg[3,7][7]'
+INFO: [Synth 8-3886] merging instance 'Mario/current_screen_reg[1,6][6]' (FDE) to 'Mario/current_screen_reg[1,6][4]'
+INFO: [Synth 8-3886] merging instance 'Mario/current_screen_reg[2,6][6]' (FDE) to 'Mario/current_screen_reg[2,6][7]'
+INFO: [Synth 8-3886] merging instance 'Mario/current_screen_reg[3,6][6]' (FDE) to 'Mario/current_screen_reg[3,6][3]'
+INFO: [Synth 8-3886] merging instance 'Mario/current_screen_reg[1,5][6]' (FDE) to 'Mario/current_screen_reg[1,5][7]'
+INFO: [Synth 8-3886] merging instance 'Mario/current_screen_reg[2,5][6]' (FDE) to 'Mario/current_screen_reg[2,5][7]'
+INFO: [Synth 8-3886] merging instance 'Mario/current_screen_reg[3,5][6]' (FDE) to 'Mario/current_screen_reg[3,5][7]'
+INFO: [Synth 8-3886] merging instance 'Mario/current_screen_reg[2,4][6]' (FDE) to 'Mario/current_screen_reg[2,4][3]'
+INFO: [Synth 8-3886] merging instance 'Mario/current_screen_reg[3,4][6]' (FDE) to 'Mario/current_screen_reg[3,4][7]'
+INFO: [Synth 8-3886] merging instance 'Mario/current_screen_reg[0,3][6]' (FDE) to 'Mario/current_screen_reg[0,3][3]'
+INFO: [Synth 8-3886] merging instance 'Mario/current_screen_reg[2,3][6]' (FDE) to 'Mario/current_screen_reg[2,3][7]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Mario/current_screen_reg[2,0][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Mario/after_char_state_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Mario/temp_delay_ms_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Init/temp_dc_reg )
+WARNING: [Synth 8-3332] Sequential element (Init/DELAY_COMP/FSM_onehot_current_state_reg[3]) is unused and will be removed from module PmodOLED.
+WARNING: [Synth 8-3332] Sequential element (Mario/DELAY_COMP/FSM_onehot_current_state_reg[3]) is unused and will be removed from module PmodOLED.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 853.695 ; gain = 535.695
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++-------------------+-------------------------------+---------------+----------------+
+|Module Name        | RTL Object                    | Depth x Width | Implemented As | 
++-------------------+-------------------------------+---------------+----------------+
+|OledInit           | after_state                   | 32x1          | LUT            | 
+|OledInit           | after_state                   | 32x5          | LUT            | 
+|OledInit           | temp_spi_data                 | 32x1          | LUT            | 
+|OledMarioAnimation | current_screen[0,0]           | 128x1         | LUT            | 
+|OledMarioAnimation | after_state                   | 128x1         | LUT            | 
+|OledMarioAnimation | temp_delay_ms                 | 128x1         | LUT            | 
+|PmodOLED           | Init/after_state              | 32x5          | LUT            | 
+|PmodOLED           | Init/after_state              | 32x1          | LUT            | 
+|PmodOLED           | Init/temp_spi_data            | 32x1          | LUT            | 
+|PmodOLED           | Mario/current_screen_reg[3,0] | 128x8         | Block RAM      | 
+|PmodOLED           | Mario/current_screen_reg[1,0] | 128x8         | Block RAM      | 
+|PmodOLED           | Mario/current_screen_reg[3,1] | 128x8         | Block RAM      | 
+|PmodOLED           | Mario/current_screen[0,0]     | 128x1         | LUT            | 
+|PmodOLED           | Mario/temp_delay_ms           | 128x1         | LUT            | 
++-------------------+-------------------------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6837] The timing for the instance i_0/Mario/current_screen_reg[3,0] (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_1/Mario/current_screen_reg[1,0] (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_2/Mario/current_screen_reg[3,1] (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 853.695 ; gain = 535.695
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 890.770 ; gain = 572.770
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6837] The timing for the instance Mario/current_screen_reg[3,0] (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance Mario/current_screen_reg[1,0] (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance Mario/current_screen_reg[3,1] (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 891.777 ; gain = 573.777
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 891.777 ; gain = 573.777
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 891.777 ; gain = 573.777
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 891.777 ; gain = 573.777
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 891.777 ; gain = 573.777
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 891.777 ; gain = 573.777
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 891.777 ; gain = 573.777
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |charLib       |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+---------------+------+
+|      |Cell           |Count |
++------+---------------+------+
+|1     |charLib_bbox_0 |     1|
+|2     |BUFG           |     1|
+|3     |CARRY4         |    18|
+|4     |LUT1           |    14|
+|5     |LUT2           |    34|
+|6     |LUT3           |    44|
+|7     |LUT4           |    53|
+|8     |LUT5           |   135|
+|9     |LUT6           |   201|
+|10    |MUXF7          |    36|
+|11    |MUXF8          |     7|
+|12    |RAMB18E1       |     1|
+|13    |RAMB18E1_1     |     1|
+|14    |RAMB18E1_2     |     1|
+|15    |FDRE           |   249|
+|16    |FDSE           |    34|
+|17    |IBUF           |     4|
+|18    |OBUF           |     7|
++------+---------------+------+
+
+Report Instance Areas: 
++------+---------------+--------------------+------+
+|      |Instance       |Module              |Cells |
++------+---------------+--------------------+------+
+|1     |top            |                    |   848|
+|2     |  Init         |OledInit            |   164|
+|3     |    DELAY_COMP |DelayMilliseconds_0 |    59|
+|4     |    SPI_COMP   |SpiMarioLib_1       |    52|
+|5     |  Mario        |OledMarioAnimation  |   669|
+|6     |    DELAY_COMP |DelayMilliseconds   |    58|
+|7     |    SPI_COMP   |SpiMarioLib         |    49|
++------+---------------+--------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 891.777 ; gain = 573.777
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 8 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:27 ; elapsed = 00:00:32 . Memory (MB): peak = 891.777 ; gain = 223.355
+Synthesis Optimization Complete : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 891.777 ; gain = 573.777
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 64 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 891.777 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+206 Infos, 9 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 891.777 ; gain = 585.242
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 891.777 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Storage/facultate/SSC/Project Pmod OLED/Nexys4OLEDdemo/Nexys4OLEDdemo.runs/synth_1/PmodOLED.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file PmodOLED_utilization_synth.rpt -pb PmodOLED_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Dec 14 20:21:41 2019...
